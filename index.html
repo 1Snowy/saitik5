@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Гоночные носки</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    </style>
+    <script src="but_p1_on_off.js"></script>
+    <script src="slider.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Гоночные носки</h1>
+    <h2>Полу-керамические тормозные носочки</h2>
+</header>
+
+
+<nav>
+    <a href="#home">Главная</a>
+    <a href="#about">О носочках</a>
+    <a href="#projects">Проекты</a>
+    <a href="#contact">Контакты</a>
+</nav>
+
+<main>
+    <section id="home">
+        <h2>Главная страница</h2>
+        <p>Гоночочные полу-керамические тормозные носочки с машинками, обеспечивающие максимальный комфорт и стиль. На рынке мы уже с 1999 года, и за это время зарекомендовали себя как лидеры в области высокотехнологичных носочных решений. Наши носочки созданы для тех, кто ценит не только качество, но и инновации в каждой детали.
+
+            Наша продукция прошла множество тестов на износостойкость и удобство, что делает её идеальной как для повседневной носки, так и для занятий спортом. Специальный материал с эффектом терморегуляции поддерживает оптимальную температуру в любую погоду, а антискользящие вставки обеспечивают уверенность на любой поверхности.
+            
+            Мы работаем с лучшими дизайнерами, чтобы наши носочки не только выполняли свою функцию, но и выглядели стильно. Независимо от того, выбираете ли вы классику или носки с ярким, оригинальным дизайном — с нашими носками вы всегда будете в тренде!
+            
+            Наши постоянные клиенты ценят нас за:
+            
+            Высокую износостойкость.
+            Уникальный комфорт.
+            Современные технологии производства.
+            Яркие и запоминающиеся дизайны.
+            Присоединяйтесь к тысячам довольных клиентов и выберите Гоночные носки — ваш идеальный спутник в любых условиях!</p>
+    </section>
+
+    <section id="about">
+        <h2>О носочках</h2>
+        <p>Наши носочки имеют итальянский пошив и уникальный мятный эффект дыма, делая каждый шаг уверенным и элегантным.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Наши проекты</h2>
+        <p>Мы представляем несколько проектов, над которыми работали.</p>
+        <p>Их вы можете преобрести по пред-заказу.</p>
+        <ul>
+            <figure>
+                <button onmouseover="b1_on()" onclick="slide_right()" id="pic1_right"></button>
+                <button onmouseover="b1_on()" onclick="slide_left()" id="pic1_left"></button>
+                <img id="p1" src="Screenshot_3.png" onmouseover="b1_on()" onmouseout="b1_off()" alt="Проект 1" width="500" height="300">
+                <img id="p2" src="i1.png" onmouseover="b1_on()" onmouseout="b1_off()" alt="Проект 3" width="500" height="300">
+            </figure>
+            <figure>
+                <img id="p3" src="Screenshot_4.png" onmouseover="b1_on()" onmouseout="b1_off()" alt="Проект 2" width="500" height="300">
+                <img id="p4" src="i.png" onmouseover="b1_on()" onmouseout="b1_off()" alt="Проект 4" width="500" height="300">
+            </figure>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Контактная информация</h2>
+        <p1>Вы можете связаться с нами по электронной почте: <a href="mailto:nosochki@mail.com">nosochki@mail.com</a></p1>
+    </section>
+
+    <form class="decor" action="https://yandex.ru/games/">
+        <div class="form-inner">
+        <h2>Оформить пердзаказ</h2>
+        <input type="text" placeholder="Ф.И.О" pattern="[a-zA-Z]{1,}" required>
+        <input type="email" placeholder="Email" required>
+        <input type="numder" placeholder="Номер телефона" pattern="[0-9]*" required>
+        <input type="adress" placeholder="Адрес" required>
+        <textarea placeholder="Сообщение..." rows="3"></textarea>
+        <input type="submit" value="Отправить">
+        </div>
+        </form>
+</main>
+
+
+<footer>
+    <p>&copy; 2024 Гоночные носки. Все права защищены.</p>
+</footer>
+
+</body>
+</html>
